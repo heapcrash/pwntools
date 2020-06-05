@@ -62,7 +62,7 @@ loop:
 end:
 '''
 
-    blacklist = set('\x14$1I^tu\x83\x89\x93\xab\xad\xc6\xd8\xd9\xf4\xf7\xfc')
+    blacklist = set(b'\x14$1I^tu\x83\x89\x93\xab\xad\xc6\xd8\xd9\xf4\xf7\xfc')
 
     def __call__(self, raw_bytes, avoid, pcreg=''):
         while len(raw_bytes) % context.bytes:

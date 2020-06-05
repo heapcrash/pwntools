@@ -60,6 +60,7 @@ def encode(raw_bytes, avoid=None, expr=None, force=0, pcreg=''):
         force(bool):    Force re-encoding of the shellcode, even if it
                         doesn't contain any bytes in ``avoid``.
     """
+    import ipdb; ipdb.set_trace()
     orig_avoid = avoid
 
     avoid = set(avoid or '')
